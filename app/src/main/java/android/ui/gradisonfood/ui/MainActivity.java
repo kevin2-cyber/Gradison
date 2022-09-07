@@ -3,6 +3,7 @@ package android.ui.gradisonfood.ui;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.splashscreen.SplashScreen;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.ui.gradisonfood.databinding.ActivityMainBinding;
 import android.view.View;
@@ -24,5 +25,7 @@ public class MainActivity extends AppCompatActivity {
         decorView.setSystemUiVisibility(uiOptions);
 
         setContentView(binding.getRoot());
+
+        binding.btnGetStarted.setOnClickListener(view -> startActivity(new Intent(this, MenuActivity.class)));
     }
 }
