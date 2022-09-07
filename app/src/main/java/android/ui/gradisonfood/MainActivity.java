@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         super.onCreate(savedInstanceState);
+        // Handle the SplashScreen transition
         SplashScreen splashScreen = SplashScreen.installSplashScreen(this);
         setContentView(binding.getRoot());
     }
