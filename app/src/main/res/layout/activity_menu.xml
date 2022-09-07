@@ -35,6 +35,8 @@
         android:layout_marginTop="60dp"
         android:inputType="text"
         android:autofillHints="name"
+        android:fontFamily="@font/poppins"
+        android:textAlignment="viewStart"
         android:hint="@string/search"
         android:drawableStart="@drawable/ic_baseline_search_24"
         android:drawablePadding="10dp"
