@@ -1,4 +1,4 @@
-package android.ui.gradisonfood;
+package android.ui.gradisonfood.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.splashscreen.SplashScreen;
