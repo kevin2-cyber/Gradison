@@ -2,8 +2,8 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:gravity="center"
-    android:padding="10dp"
     android:background="@color/kPrimary"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -14,7 +14,7 @@
 
         <ImageButton
             android:id="@+id/ib_food"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:contentDescription="@string/app_name"
             android:background="@color/kPrimary"
@@ -22,5 +22,11 @@
             android:scaleType="fitXY"/>
 
     </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/all"
+        android:textSize="20sp"/>
 
 </LinearLayout>
