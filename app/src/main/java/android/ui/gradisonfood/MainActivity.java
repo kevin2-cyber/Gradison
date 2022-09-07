@@ -3,10 +3,9 @@ package android.ui.gradisonfood;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.splashscreen.SplashScreen;
 
-import android.os.Build;
 import android.os.Bundle;
 import android.ui.gradisonfood.databinding.ActivityMainBinding;
-import android.view.WindowManager;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,8 +18,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         // Handle the SplashScreen transition
         SplashScreen splashScreen = SplashScreen.installSplashScreen(this);
-            getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-                    WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        View decorView = getWindow().getDecorView();
+        // Hide the status bar.
+        int uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN;
+        decorView.setSystemUiVisibility(uiOptions);
 
         setContentView(binding.getRoot());
     }
