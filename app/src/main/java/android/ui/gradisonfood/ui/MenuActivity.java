@@ -16,8 +16,6 @@ public class MenuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(binding.getRoot());
 
-
-
         // Font path
         String fontPath = "fonts/montserrat_regular.ttf";
 
