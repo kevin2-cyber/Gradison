@@ -50,8 +50,8 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
         android:layout_marginTop="10dp"
         tools:listitem="@layout/item"
         app:layout_constraintStart_toStartOf="parent"
