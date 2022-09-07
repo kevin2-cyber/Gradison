@@ -10,5 +10,7 @@
 
         <item name="postSplashScreenTheme">@style/Theme.GradisonFood</item>
 
+
+
     </style>
 </resources>
