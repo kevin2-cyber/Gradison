@@ -2,4 +2,5 @@
     <string name="app_name">Gradison Food</string>
     <string name="delicious_meal">DELICIOUS MEAL</string>
     <string name="get_started">GET STARTED</string>
+    <string name="menu">MENU</string>
 </resources>
