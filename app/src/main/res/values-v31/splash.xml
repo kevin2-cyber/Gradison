@@ -7,7 +7,7 @@
 
         <item name="windowSplashScreenAnimatedIcon">@drawable/img</item>
 
-        <item name="windowSplashScreenBackground">#089B29</item>
+        <item name="windowSplashScreenBackground">@color/kPrimary</item>
 
         <item name="postSplashScreenTheme">@style/Theme.GradisonFood</item>
 

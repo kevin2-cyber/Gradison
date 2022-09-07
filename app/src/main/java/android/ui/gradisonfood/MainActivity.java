@@ -19,11 +19,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         // Handle the SplashScreen transition
         SplashScreen splashScreen = SplashScreen.installSplashScreen(this);
-
-        if (Build.VERSION.SDK_INT < 31) {
             getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                     WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        }
+
         setContentView(binding.getRoot());
     }
 }
