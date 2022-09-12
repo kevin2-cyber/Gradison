@@ -28,4 +28,5 @@ public class MainActivity extends AppCompatActivity {
 
         binding.btnGetStarted.setOnClickListener(view -> startActivity(new Intent(this, MenuActivity.class)));
     }
+    
 }
