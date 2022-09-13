@@ -13,9 +13,7 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodViewHolder> {
     }
 
     @Override
-    public void onBindViewHolder(@NonNull FoodViewHolder holder, int position) {
-
-    }
+    public void onBindViewHolder(@NonNull FoodViewHolder holder, int position) {}
 
     @Override
     public int getItemCount() {
