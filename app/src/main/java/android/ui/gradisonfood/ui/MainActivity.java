@@ -20,10 +20,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         // Handle the SplashScreen transition
         SplashScreen splashScreen = SplashScreen.installSplashScreen(this);
-        View decorView = getWindow().getDecorView();
-        // Hide the status bar.
-        int uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN;
-        decorView.setSystemUiVisibility(uiOptions);
+     // View decorView = getWindow().getDecorView();
+       // Hide the status bar.
+     // int uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN;
+    //  decorView.setSystemUiVisibility(uiOptions);
 
         setContentView(binding.getRoot());
 
