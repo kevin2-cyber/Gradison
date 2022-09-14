@@ -56,7 +56,7 @@
         android:layout_marginTop="10dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_search"
-        tools:listitem="@layout/item" />
+        tools:listitem="@layout/food_item" />
 
     <TextView
         android:id="@+id/discount"
