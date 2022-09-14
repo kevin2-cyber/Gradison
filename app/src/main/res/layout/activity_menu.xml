@@ -50,11 +50,23 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
         android:layout_width="80dp"
         android:layout_height="60dp"
         android:layout_marginTop="10dp"
-        tools:listitem="@layout/item"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_search" />
+        app:layout_constraintTop_toBottomOf="@+id/et_search"
+        tools:listitem="@layout/item" />
+
+    <TextView
+        android:id="@+id/discount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/discount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
