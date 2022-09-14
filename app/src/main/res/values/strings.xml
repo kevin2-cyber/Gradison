@@ -7,4 +7,6 @@
     <string name="all">All</string>
     <string name="discount">Today\'s Discount</string>
     <string name="popular">Popular</string>
+    <string name="pizza">Pizza</string>
+    <string name="price">$ 20</string>
 </resources>

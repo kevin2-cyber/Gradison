@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Kimi/Desktop/github/Gradison-Food/app/src/main/res/drawable/add_btn.xml" value="0.1915" />
         <entry key="..\:/Users/Kimi/Desktop/github/Gradison-Food/app/src/main/res/drawable/back_color.xml" value="0.1915" />
         <entry key="..\:/Users/Kimi/Desktop/github/Gradison-Food/app/src/main/res/drawable/bottom_text.xml" value="0.196" />
         <entry key="..\:/Users/Kimi/Desktop/github/Gradison-Food/app/src/main/res/drawable/btn_background.xml" value="0.196" />
@@ -15,6 +16,7 @@
         <entry key="..\:/Users/Kimi/Desktop/github/Gradison-Food/app/src/main/res/layout/activity_main.xml" value="0.21240942028985507" />
         <entry key="..\:/Users/Kimi/Desktop/github/Gradison-Food/app/src/main/res/layout/activity_menu.xml" value="0.24635416666666668" />
         <entry key="..\:/Users/Kimi/Desktop/github/Gradison-Food/app/src/main/res/layout/item.xml" value="0.2128623188405797" />
+        <entry key="..\:/Users/Kimi/Desktop/github/Gradison-Food/app/src/main/res/layout/price_item.xml" value="0.20380434782608695" />
       </map>
     </option>
   </component>
