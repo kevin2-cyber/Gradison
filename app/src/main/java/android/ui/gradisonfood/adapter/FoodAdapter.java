@@ -1,6 +1,7 @@
 package android.ui.gradisonfood.adapter;
 
 import android.ui.gradisonfood.model.FoodModel;
+import android.ui.gradisonfood.viewHolder.FoodViewHolder;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;

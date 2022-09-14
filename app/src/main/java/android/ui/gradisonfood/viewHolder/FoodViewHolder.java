@@ -1,4 +1,4 @@
-package android.ui.gradisonfood.adapter;
+package android.ui.gradisonfood.viewHolder;
 
 import android.view.View;
 
