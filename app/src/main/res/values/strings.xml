@@ -6,4 +6,5 @@
     <string name="search">Search</string>
     <string name="all">All</string>
     <string name="discount">Today\'s Discount</string>
+    <string name="popular">Popular</string>
 </resources>
