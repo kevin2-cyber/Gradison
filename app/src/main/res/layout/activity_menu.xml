@@ -73,19 +73,19 @@
 
     <ImageView
         android:id="@+id/iv_chicken"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="200dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="256dp"
+        android:contentDescription="@string/get_started"
         android:src="@drawable/img_4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintHorizontal_bias="0.903"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:contentDescription="@string/get_started" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="130dp"
         android:layout_marginTop="68dp"
         android:background="@drawable/back_color"
         app:layout_constraintEnd_toEndOf="parent"
