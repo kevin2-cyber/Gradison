@@ -66,9 +66,27 @@
         android:layout_marginTop="52dp"
         android:fontFamily="@font/poppins"
         android:text="@string/discount"
-        android:textStyle="bold"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
+
+    <ImageView
+        android:id="@+id/iv_chicken"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/img_4"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="185dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/back_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/discount" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
