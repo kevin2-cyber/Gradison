@@ -1,2 +1,2 @@
 # Gradison-Food
-A Food App UI made with native android. 
+A Food Delivery App UI made with native android. 
