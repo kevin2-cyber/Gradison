@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Pizza</string>
+    <string name="title_home">Home</string>
+    <string name="title_shop">Shop</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="find_and_get">Find and Get</string>
+    <string name="your_best_food">Your best Food</string>
+    <string name="most">Find the most delicious food</string>
+    <string name="with">with the best quality and free delivery here</string>
+    <string name="skip">Skip</string>
+    <string name="nevada_us">Nevada, US</string>
+    <string name="order_your_food">Order Your Food</string>
+    <string name="fast_and_free">Fast and Free</string>
+    <string name="search">Search</string>
+    <string name="categories">Categories</string>
+</resources>
