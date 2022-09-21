@@ -1,16 +1,16 @@
-package android.ui.pizza.ui.dashboard;
+package android.ui.pizza.ui.shopping;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class DashboardViewModel extends ViewModel {
+public class ShoppingViewModel extends ViewModel {
 
     private final MutableLiveData<String> mText;
 
-    public DashboardViewModel() {
+    public ShoppingViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is dashboard fragment");
+        mText.setValue("This is Shopping fragment");
     }
 
     public LiveData<String> getText() {

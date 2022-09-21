@@ -12,10 +12,10 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="android.ui.pizza.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_shopping"
+        android:name="android.ui.pizza.ui.shopping.ShoppingFragment"
+        android:label="@string/title_shop"
+        tools:layout="@layout/fragment_shopping" />
 
     <fragment
         android:id="@+id/navigation_notifications"

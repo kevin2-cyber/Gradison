@@ -1,4 +1,4 @@
-package android.ui.pizza.ui.dashboard;
+package android.ui.pizza.ui.shopping;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,22 +10,22 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import android.ui.pizza.databinding.FragmentDashboardBinding;
+import android.ui.pizza.databinding.FragmentShoppingBinding;
 
-public class DashboardFragment extends Fragment {
+public class ShoppingFragment extends Fragment {
 
-    private FragmentDashboardBinding binding;
+    private FragmentShoppingBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        DashboardViewModel dashboardViewModel =
-                new ViewModelProvider(this).get(DashboardViewModel.class);
+        ShoppingViewModel shoppingViewModel =
+                new ViewModelProvider(this).get(ShoppingViewModel.class);
 
-        binding = FragmentDashboardBinding.inflate(inflater, container, false);
+        binding = FragmentShoppingBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         final TextView textView = binding.textDashboard;
-        dashboardViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        shoppingViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 
