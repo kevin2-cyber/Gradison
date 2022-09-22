@@ -13,4 +13,6 @@
     <string name="fast_and_free">Fast and Free</string>
     <string name="search">Search</string>
     <string name="categories">Categories</string>
+    <string name="burger">🍔</string>
+    <string name="name">Burger</string>
 </resources>
