@@ -4,8 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/imagebkg"
     tools:context=".ui.IntroActivity">
+
+    <FrameLayout
+        android:id="@+id/fl_try"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/back"
+            android:scaleType="fitXY"
+            android:contentDescription="@string/app_name">
+        </ImageView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/img"
+            android:scaleType="fitXY"
+            android:contentDescription="@string/app_name" />
+
+    </FrameLayout>
 
     <TextView
         android:id="@+id/tv_find"

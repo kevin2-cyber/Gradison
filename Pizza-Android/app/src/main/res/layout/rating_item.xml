@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/cv_rating"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="5dp"
+    app:cardCornerRadius="15dp"
+    android:layout_width="190dp"
+    android:layout_height="200dp"
+    android:padding="20dp"
+    android:background="?android:attr/windowBackground"
+    android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/tv_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_4_8"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:drawablePadding="10dp"
+            app:drawableStartCompat="@drawable/star" />
+
+        <ImageView
+            android:id="@+id/iv_burger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/chickenburger"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:id="@+id/tv_burger_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/chicken_burger"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_text_things"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_200_gr_chicken_cheese"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp"/>
+
+        <TextView
+            android:id="@+id/tv_text_things_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lettuce_tomato"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"/>
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dollar"
+            android:textStyle="bold"
+            android:textColor="@color/kPrimary"
+            android:layout_marginTop="170dp"
+            android:layout_marginStart="10dp"/>
+
+        <ImageButton
+            android:id="@+id/ib_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="170dp"
+            android:layout_marginStart="155dp"
+            android:src="@drawable/ic_baseline_add_24"
+            android:background="@drawable/add_background"
+            android:contentDescription="@string/app_name" />
+
+
+</androidx.cardview.widget.CardView>

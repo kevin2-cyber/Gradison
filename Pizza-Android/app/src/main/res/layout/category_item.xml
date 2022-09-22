@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/cv_categories"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:background="@drawable/categories_item_background_pressed"
+    android:layout_width="100dp"
+    android:layout_height="40dp"
+    android:layout_gravity="center"
+    android:elevation="5dp"
+    app:cardCornerRadius="5dp">
+
+    <TextView
+        android:id="@+id/tv_emoji"
+       android:paddingStart="10dp"
+        android:paddingEnd="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/burger_emoji"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_food"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/burger"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:paddingStart="40dp"
+        android:paddingEnd="0dp"
+        android:layout_marginTop="10dp"/>
+
+</androidx.cardview.widget.CardView>
