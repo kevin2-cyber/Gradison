@@ -8,6 +8,7 @@
     android:layout_width="190dp"
     android:layout_height="200dp"
     android:padding="20dp"
+    android:background="?android:attr/windowBackground"
     android:layout_gravity="center">
 
         <TextView
