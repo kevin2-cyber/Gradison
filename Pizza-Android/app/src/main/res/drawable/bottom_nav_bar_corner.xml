@@ -4,6 +4,6 @@
 
     <corners android:topLeftRadius="20dp"
         android:topRightRadius="20dp"/>
-    <solid android:color="@color/faintWhite"/>
+    <solid android:color="?android:attr/windowBackground"/>
 
 </shape>

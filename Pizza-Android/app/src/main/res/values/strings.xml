@@ -13,6 +13,9 @@
     <string name="fast_and_free">Fast and Free</string>
     <string name="search">Search</string>
     <string name="categories">Categories</string>
-    <string name="burger">🍔</string>
-    <string name="name">Burger</string>
+    <string name="burger_emoji">🍔</string>
+    <string name="burger">Burger</string>
+    <string name="pizza_emoji">🍕</string>
+    <string name="sandwich">SandWich</string>
+    <string name="sandwich_emoji">🌭</string>
 </resources>

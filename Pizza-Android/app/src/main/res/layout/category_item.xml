@@ -13,13 +13,13 @@
         android:paddingEnd="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/burger"/>
+        android:text="@string/burger_emoji"/>
 
     <TextView
         android:id="@+id/tv_food"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/name"
+        android:text="@string/burger"
         android:textColor="@color/white"
         android:textStyle="bold"
         android:textSize="15sp"/>
