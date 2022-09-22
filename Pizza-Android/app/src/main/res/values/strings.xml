@@ -23,4 +23,7 @@
     <string name="_200_gr_chicken_cheese">200 gr chicken + cheese</string>
     <string name="lettuce_tomato">Lettuce + tomato</string>
     <string name="dollar">$ 22.00</string>
+    <string name="dollar_2">$ 25.00</string>
+    <string name="_200_gr_meat_lettuce">200 gr meat + lettuce</string>
+    <string name="cheese_onion_tomato">cheese + onion + tomato</string>
 </resources>
