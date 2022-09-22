@@ -19,4 +19,8 @@
     <string name="sandwich">SandWich</string>
     <string name="sandwich_emoji">🌭</string>
     <string name="_4_8">4.8</string>
+    <string name="chicken_burger">Chicken Burger</string>
+    <string name="_200_gr_chicken_cheese">200 gr chicken + cheese</string>
+    <string name="lettuce_tomato">Lettuce + tomato</string>
+    <string name="dollar">$ 22.00</string>
 </resources>
