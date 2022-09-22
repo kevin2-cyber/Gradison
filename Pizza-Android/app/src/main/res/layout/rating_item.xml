@@ -1,22 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cv_rating"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:elevation="5dp"
+    app:cardCornerRadius="15dp"
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    android:padding="10dp"
+    android:layout_gravity="center">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cv_rating"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:elevation="4dp"
-        app:cardCornerRadius="15dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+    <LinearLayout
+        android:id="@+id/ll_star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:id="@+id/tv_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/star"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:id="@+id/tv_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_4_8"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="5dp"/>
 
 
-    </androidx.cardview.widget.CardView>
+    </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
