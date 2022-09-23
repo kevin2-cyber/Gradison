@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="android.ui.pizza_flutter">
    <application
-        android:label="pizza_flutter"
+        android:label="Pizza"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
