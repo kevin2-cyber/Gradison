@@ -10,4 +10,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="kPrimary">#FF9431</color>
     <color name="faintWhite">#80FFFFFF</color>
+    <color name="kDetailsBackground">#FFFFF1E5</color>
+    <color name="kIcon">#FF0D0D0D</color>
 </resources>
