@@ -26,4 +26,12 @@
     <string name="dollar_2">$ 25.00</string>
     <string name="_200_gr_meat_lettuce">200 gr meat + lettuce</string>
     <string name="cheese_onion_tomato">cheese + onion + tomato</string>
+    <string name="_41_reviews">(41 Reviews)</string>
+    <string name="_1">1</string>
+    <string name="size">Size</string>
+    <string name="medium">Medium</string>
+    <string name="energy">Energy</string>
+    <string name="_554_kcal">554 KCal</string>
+    <string name="delivery">Delivery</string>
+    <string name="_45_min">45 min</string>
 </resources>
