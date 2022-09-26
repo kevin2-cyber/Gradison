@@ -96,6 +96,14 @@
 <!--            android:contentDescription="@string/app_name"/>-->
 <!--    </LinearLayout>-->
 
+    <androidx.viewpager2.widget.ViewPager2
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/ll_icons"/>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/cl_content"
         android:layout_width="match_parent"
@@ -160,7 +168,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:background="@color/kDetailsBackground"
+            android:background="@drawable/item_no_background"
+            android:padding="5dp"
             app:layout_constraintTop_toBottomOf="@id/reviews"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="38dp"
