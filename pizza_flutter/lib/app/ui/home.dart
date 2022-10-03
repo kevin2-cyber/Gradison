@@ -25,6 +25,10 @@ class _HomeState extends State<Home> {
                   'Nevada, US',
                 style: GoogleFonts.montserrat(),
               ),
+              const Icon(
+                  Icons.keyboard_arrow_down_outlined,
+              color: AppColors.kPrimary,
+              ),
             ],
           )
         ],
