@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:pizza_flutter/app/ui/demo_page_view.dart';
 import '/core/app_colors.dart';
 
 class IntroScreen extends StatefulWidget {
@@ -10,6 +11,9 @@ class IntroScreen extends StatefulWidget {
 }
 
 class _IntroScreenState extends State<IntroScreen> {
+
+  final PageController _controller = PageController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -67,7 +71,11 @@ class _IntroScreenState extends State<IntroScreen> {
         padding: const EdgeInsets.only(bottom: 80.0),
         child: FloatingActionButton(
           backgroundColor: AppColors.kPrimary,
-          onPressed: () {},
+          onPressed: () {
+            Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const DemoPageView()));
+          },
           child: const Icon(Icons.arrow_forward_ios, color: Colors.white,),
         ),
       ),
