@@ -109,6 +109,8 @@
         android:id="@+id/cl_content"
         android:layout_width="match_parent"
         android:layout_height="440dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
         android:background="@drawable/bottom_nav_bar_corner"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -118,7 +120,6 @@
             android:id="@+id/tv_food_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
             android:layout_marginTop="24dp"
             android:fontFamily="@font/roboto"
             android:text="@string/chicken_burger"
@@ -132,7 +133,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
-            android:layout_marginEnd="116dp"
+            android:layout_marginEnd="100dp"
             android:text="@string/_4_8"
             android:textSize="15sp"
             app:drawableStartCompat="@drawable/star"
@@ -155,7 +156,6 @@
             android:id="@+id/tv_price_content"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
             android:layout_marginTop="24dp"
             android:fontFamily="@font/roboto"
             android:text="@string/dollar"
@@ -174,7 +174,7 @@
             app:layout_constraintTop_toBottomOf="@id/reviews"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="38dp"
-            android:layout_marginStart="240dp"
+            android:layout_marginStart="265dp"
             app:layout_constraintStart_toStartOf="@+id/tv_price_content">
 
             <ImageButton
@@ -301,6 +301,46 @@
             </androidx.cardview.widget.CardView>
 
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/about"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:fontFamily="@font/roboto"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.443" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="false"
+            android:maxLines="4"
+            android:text="@string/tv_content_info"
+            android:fontFamily="@font/roboto"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_about"
+            app:layout_constraintVertical_bias="0.055" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_to_cart"
+            android:textAllCaps="false"
+            android:padding="10dp"
+            android:fontFamily="@font/roboto"
+            android:background="@drawable/add_cart_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="50dp"/>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

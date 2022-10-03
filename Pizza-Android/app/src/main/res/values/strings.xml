@@ -34,4 +34,7 @@
     <string name="_554_kcal">554 KCal</string>
     <string name="delivery">Delivery</string>
     <string name="_45_min">45 min</string>
+    <string name="about">About</string>
+    <string name="tv_content_info">Crispy seasoned chicken breast, topped with mandatory melted cheese and piled onto soft rolls with onion, avocado, lettuce, tomato and garlic mayo \n if(ordered).</string>
+    <string name="add_to_cart">Add to Cart</string>
 </resources>
