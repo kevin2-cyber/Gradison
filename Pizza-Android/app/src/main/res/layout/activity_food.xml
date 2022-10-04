@@ -96,7 +96,7 @@
 <!--            android:contentDescription="@string/app_name"/>-->
 <!--    </LinearLayout>-->
 
-    <androidx.viewpager2.widget.ViewPager2
+    <androidx.viewpager.widget.ViewPager
         android:id="@+id/vp_pager"
         android:layout_width="match_parent"
         android:layout_height="200dp"
