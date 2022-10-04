@@ -96,10 +96,21 @@
 <!--            android:contentDescription="@string/app_name"/>-->
 <!--    </LinearLayout>-->
 
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/vp_pager"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/ll_icons"/>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/cl_content"
         android:layout_width="match_parent"
         android:layout_height="440dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
         android:background="@drawable/bottom_nav_bar_corner"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -109,7 +120,6 @@
             android:id="@+id/tv_food_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
             android:layout_marginTop="24dp"
             android:fontFamily="@font/roboto"
             android:text="@string/chicken_burger"
@@ -123,7 +133,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
-            android:layout_marginEnd="116dp"
+            android:layout_marginEnd="100dp"
             android:text="@string/_4_8"
             android:textSize="15sp"
             app:drawableStartCompat="@drawable/star"
@@ -146,7 +156,6 @@
             android:id="@+id/tv_price_content"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
             android:layout_marginTop="24dp"
             android:fontFamily="@font/roboto"
             android:text="@string/dollar"
@@ -160,11 +169,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:background="@color/kDetailsBackground"
+            android:background="@drawable/item_no_background"
+            android:padding="5dp"
             app:layout_constraintTop_toBottomOf="@id/reviews"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="38dp"
-            android:layout_marginStart="240dp"
+            android:layout_marginStart="265dp"
             app:layout_constraintStart_toStartOf="@+id/tv_price_content">
 
             <ImageButton
@@ -202,95 +212,252 @@
             android:id="@+id/ll_item"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="280dp"
+            android:layout_marginBottom="248dp"
             android:orientation="horizontal"
             android:paddingStart="20dp"
             android:paddingEnd="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent">
 
-            <androidx.cardview.widget.CardView
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/filter_background"
-                app:cardCornerRadius="5dp"
-                app:cardElevation="5dp"
-                android:padding="50dp">
+                android:layout_marginEnd="50dp"
+                android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/tv_size"
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/roboto"
-                    android:text="@string/size"
-                    android:textColor="@color/kPrimary"
-                    app:drawableEndCompat="@drawable/ic_baseline_keyboard_arrow_down_24" />
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="10dp"
+                        android:text="@string/size"
+                        android:fontFamily="@font/poppins_medium"/>
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/white"
+                        android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
+                        android:contentDescription="@string/medium"/>
+
+                </LinearLayout>
 
                 <TextView
-                    android:id="@+id/tv_degree"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:fontFamily="@font/roboto"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="10dp"
+                    android:text="@string/medium"
                     android:textStyle="bold"
-                    android:text="@string/medium" />
-            </androidx.cardview.widget.CardView>
+                    android:textSize="15sp"
+                    android:fontFamily="@font/poppins_medium"/>
 
-            <androidx.cardview.widget.CardView
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/filter_background"
-                app:cardCornerRadius="5dp"
-                app:cardElevation="5dp"
-                android:padding="50dp">
+                android:layout_marginEnd="50dp"
+                android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/tv_energy"
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/roboto"
-                    android:text="@string/energy"
-                    android:textColor="@color/kPrimary"/>
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="10dp"
+                        android:text="@string/energy"
+                        android:textColor="@color/kPrimary"
+                        android:fontFamily="@font/poppins_medium"/>
+
+                </LinearLayout>
 
                 <TextView
-                    android:id="@+id/tv_energy_value"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:fontFamily="@font/roboto"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="10dp"
+                    android:text="@string/_554_kcal"
                     android:textStyle="bold"
-                    android:text="@string/_554_kcal" />
-            </androidx.cardview.widget.CardView>
+                    android:textSize="15sp"
+                    android:fontFamily="@font/poppins_medium"/>
 
-            <androidx.cardview.widget.CardView
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/filter_background"
-                app:cardCornerRadius="5dp"
-                app:cardElevation="5dp"
-                android:padding="50dp">
+                android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/tv_delivery"
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/roboto"
-                    android:text="@string/delivery"
-                    android:textColor="@color/kPrimary"/>
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="10dp"
+                        android:text="@string/delivery"
+                        android:textColor="@color/kPrimary"
+                        android:fontFamily="@font/poppins_medium"/>
+
+
+                </LinearLayout>
 
                 <TextView
-                    android:id="@+id/tv_duration"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:fontFamily="@font/roboto"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="10dp"
+                    android:text="@string/_45_min"
                     android:textStyle="bold"
-                    android:text="@string/_45_min" />
-            </androidx.cardview.widget.CardView>
+                    android:textSize="15sp"
+                    android:fontFamily="@font/poppins_medium"/>
+
+            </LinearLayout>
+
+            <!--            <androidx.cardview.widget.CardView-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:background="@drawable/filter_background"-->
+            <!--                app:cardCornerRadius="5dp"-->
+            <!--                app:cardElevation="5dp"-->
+            <!--                android:padding="50dp">-->
+
+            <!--                <TextView-->
+            <!--                    android:id="@+id/tv_size"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:fontFamily="@font/roboto"-->
+            <!--                    android:text="@string/size"-->
+            <!--                    android:textColor="@color/kPrimary"-->
+            <!--                    app:drawableEndCompat="@drawable/ic_baseline_keyboard_arrow_down_24" />-->
+
+            <!--                <TextView-->
+            <!--                    android:id="@+id/tv_degree"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_marginTop="20dp"-->
+            <!--                    android:fontFamily="@font/roboto"-->
+            <!--                    android:textStyle="bold"-->
+            <!--                    android:text="@string/medium" />-->
+            <!--            </androidx.cardview.widget.CardView>-->
+
+            <!--            <androidx.cardview.widget.CardView-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:background="@drawable/filter_background"-->
+            <!--                app:cardCornerRadius="5dp"-->
+            <!--                app:cardElevation="5dp"-->
+            <!--                android:padding="50dp">-->
+
+            <!--                <TextView-->
+            <!--                    android:id="@+id/tv_energy"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:fontFamily="@font/roboto"-->
+            <!--                    android:text="@string/energy"-->
+            <!--                    android:textColor="@color/kPrimary"/>-->
+
+            <!--                <TextView-->
+            <!--                    android:id="@+id/tv_energy_value"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_marginTop="20dp"-->
+            <!--                    android:fontFamily="@font/roboto"-->
+            <!--                    android:textStyle="bold"-->
+            <!--                    android:text="@string/_554_kcal" />-->
+            <!--            </androidx.cardview.widget.CardView>-->
+
+            <!--            <androidx.cardview.widget.CardView-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:background="@drawable/filter_background"-->
+            <!--                app:cardCornerRadius="5dp"-->
+            <!--                app:cardElevation="5dp"-->
+            <!--                android:padding="50dp">-->
+
+            <!--                <TextView-->
+            <!--                    android:id="@+id/tv_delivery"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:fontFamily="@font/roboto"-->
+            <!--                    android:text="@string/delivery"-->
+            <!--                    android:textColor="@color/kPrimary"/>-->
+
+            <!--                <TextView-->
+            <!--                    android:id="@+id/tv_duration"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_marginTop="20dp"-->
+            <!--                    android:fontFamily="@font/roboto"-->
+            <!--                    android:textStyle="bold"-->
+            <!--                    android:text="@string/_45_min" />-->
+            <!--            </androidx.cardview.widget.CardView>-->
 
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="@string/about"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:fontFamily="@font/roboto"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.443" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="false"
+            android:maxLines="4"
+            android:text="@string/tv_content_info"
+            android:fontFamily="@font/roboto"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_about"
+            app:layout_constraintVertical_bias="0.055" />
+
+        <Button
+            android:id="@+id/btn_add_to_cart"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/add_cart_background"
+            android:fontFamily="@font/poppins_medium"
+            android:padding="5dp"
+            android:text="@string/add_to_cart"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

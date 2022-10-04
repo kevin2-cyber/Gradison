@@ -22,7 +22,7 @@
     <string name="chicken_burger">Chicken Burger</string>
     <string name="_200_gr_chicken_cheese">200 gr chicken + cheese</string>
     <string name="lettuce_tomato">Lettuce + tomato</string>
-    <string name="dollar">$ 22.00</string>
+    <string name="dollar">$ 22.oo</string>
     <string name="dollar_2">$ 25.00</string>
     <string name="_200_gr_meat_lettuce">200 gr meat + lettuce</string>
     <string name="cheese_onion_tomato">cheese + onion + tomato</string>
@@ -34,4 +34,7 @@
     <string name="_554_kcal">554 KCal</string>
     <string name="delivery">Delivery</string>
     <string name="_45_min">45 min</string>
+    <string name="about">About</string>
+    <string name="tv_content_info">Crispy seasoned chicken breast, topped with mandatory melted cheese and piled onto soft rolls with onion, avocado, lettuce, tomato and garlic mayo \n if(ordered).</string>
+    <string name="add_to_cart">Add to Cart</string>
 </resources>
