@@ -224,6 +224,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/filter_background"
+                android:layout_marginEnd="50dp"
                 android:orientation="vertical">
 
                 <LinearLayout
@@ -243,7 +244,7 @@
                     <ImageButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_margin="5dp"
+                        android:layout_marginTop="5dp"
                         android:background="@color/white"
                         android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
                         android:contentDescription="@string/medium"/>
@@ -256,6 +257,42 @@
                     android:paddingStart="5dp"
                     android:paddingEnd="10dp"
                     android:text="@string/medium"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/poppins_medium"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/filter_background"
+                android:layout_marginEnd="50dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="10dp"
+                        android:text="@string/energy"
+                        android:textColor="@color/kPrimary"
+                        android:fontFamily="@font/poppins_medium"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="10dp"
+                    android:text="@string/_554_kcal"
                     android:textStyle="bold"
                     android:textSize="15sp"
                     android:fontFamily="@font/poppins_medium"/>
@@ -279,16 +316,10 @@
                         android:paddingTop="5dp"
                         android:paddingStart="5dp"
                         android:paddingEnd="10dp"
-                        android:text="@string/size"
+                        android:text="@string/delivery"
+                        android:textColor="@color/kPrimary"
                         android:fontFamily="@font/poppins_medium"/>
 
-                    <ImageButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="5dp"
-                        android:background="@color/white"
-                        android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
-                        android:contentDescription="@string/medium"/>
 
                 </LinearLayout>
 
@@ -297,49 +328,7 @@
                     android:layout_height="wrap_content"
                     android:paddingStart="5dp"
                     android:paddingEnd="10dp"
-                    android:text="@string/medium"
-                    android:textStyle="bold"
-                    android:textSize="15sp"
-                    android:fontFamily="@font/poppins_medium"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/filter_background"
-                android:orientation="vertical">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:paddingTop="5dp"
-                        android:paddingStart="5dp"
-                        android:paddingEnd="10dp"
-                        android:text="@string/size"
-                        android:fontFamily="@font/poppins_medium"/>
-
-                    <ImageButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="5dp"
-                        android:background="@color/white"
-                        android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
-                        android:contentDescription="@string/medium"/>
-
-                </LinearLayout>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="10dp"
-                    android:text="@string/medium"
+                    android:text="@string/_45_min"
                     android:textStyle="bold"
                     android:textSize="15sp"
                     android:fontFamily="@font/poppins_medium"/>
