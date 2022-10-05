@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 import 'app/app.dart';
 
-void main() => runApp(const PizzaApp());
+void main() {
+
+  WidgetsFlutterBinding.ensureInitialized();
+  runApp(const PizzaApp());
+
+}
 
 
