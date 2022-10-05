@@ -10,6 +10,8 @@ import android.ui.pizza.databinding.ActivityFoodBinding;
 
 import com.google.android.material.tabs.TabLayout;
 
+import java.util.Objects;
+
 public class FoodActivity extends AppCompatActivity {
 
     // enable viewBinding
@@ -32,6 +34,8 @@ public class FoodActivity extends AppCompatActivity {
         binding = ActivityFoodBinding.inflate(getLayoutInflater());
         super.onCreate(savedInstanceState);
         setContentView(binding.getRoot());
+
+        Objects.requireNonNull(getSupportActionBar()).hide();
 
         // Initializing the viewPager object
         mViewPager = binding.vpPager;

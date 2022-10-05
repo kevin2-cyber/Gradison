@@ -13,7 +13,7 @@
         android:theme="@style/Theme.Pizza"
         tools:targetApi="31">
         <activity
-            android:name=".FoodActivity"
+            android:name=".view.food.FoodActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
