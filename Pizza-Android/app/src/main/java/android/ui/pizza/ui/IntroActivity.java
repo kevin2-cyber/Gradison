@@ -4,8 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.ui.pizza.MainActivity;
+//import android.ui.pizza.MainActivity;
 import android.ui.pizza.databinding.ActivityIntroBinding;
+import android.ui.pizza.ui.food.FoodActivity;
 
 import java.util.Objects;
 
@@ -22,7 +23,7 @@ public class IntroActivity extends AppCompatActivity {
         Objects.requireNonNull(getSupportActionBar()).hide();
 
         binding.btnStart.setOnClickListener(view -> {
-            startActivity(new Intent(this, MainActivity.class));
+            startActivity(new Intent(this, FoodActivity.class));
         });
     }
 

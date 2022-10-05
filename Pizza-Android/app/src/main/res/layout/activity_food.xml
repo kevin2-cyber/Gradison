@@ -50,53 +50,18 @@
 <!--        app:layout_constraintEnd_toEndOf="parent"-->
 <!--        android:layout_marginBottom="10dp"/>-->
 
-    <LinearLayout
-        android:id="@+id/ll_buttons"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/vp_pager">
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="199dp"
+        android:background="@drawable/tab_selector"
+        app:layout_constraintBottom_toTopOf="@+id/cl_content"
+        app:layout_constraintTop_toTopOf="@+id/vp_pager"
+        app:tabGravity="center"
+        app:tabIndicatorHeight="0dp"/>
 
-        <ImageButton
-            android:id="@+id/ib_one"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_margin="5dp"
-            android:background="@drawable/pallet_normal"
-            android:contentDescription="@string/app_name"/>
-        <ImageButton
-            android:id="@+id/ib_two"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_margin="5dp"
-            android:background="@drawable/pallet_normal"
-            android:contentDescription="@string/app_name"/>
-        <ImageButton
-            android:id="@+id/ib_three"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_margin="5dp"
-            android:background="@drawable/pallet_normal"
-            android:contentDescription="@string/app_name"/>
-        <ImageButton
-            android:id="@+id/ib_four"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_margin="5dp"
-            android:background="@drawable/pallet_normal"
-            android:contentDescription="@string/app_name"/>
-        <ImageButton
-            android:id="@+id/ib_five"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_margin="5dp"
-            android:background="@drawable/pallet_normal"
-            android:contentDescription="@string/app_name"/>
-    </LinearLayout>
-
-    <androidx.viewpager2.widget.ViewPager2
+    <androidx.viewpager.widget.ViewPager
         android:id="@+id/vp_pager"
         android:layout_width="match_parent"
         android:layout_height="200dp"
