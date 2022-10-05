@@ -1,6 +1,6 @@
-package android.ui.pizza.ui.home.adapter;
+package android.ui.pizza.view.home.adapter;
 
-import android.ui.pizza.ui.home.viewholder.CategoryViewHolder;
+import android.ui.pizza.view.home.viewholder.CategoryViewHolder;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;

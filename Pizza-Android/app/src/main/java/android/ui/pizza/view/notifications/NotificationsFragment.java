@@ -1,4 +1,4 @@
-package android.ui.pizza.ui.notifications;
+package android.ui.pizza.view.notifications;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

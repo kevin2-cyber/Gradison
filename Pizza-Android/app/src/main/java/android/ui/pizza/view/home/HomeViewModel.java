@@ -1,4 +1,4 @@
-package android.ui.pizza.ui.home;
+package android.ui.pizza.view.home;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

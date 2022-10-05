@@ -1,4 +1,4 @@
-package android.ui.pizza.ui;
+package android.ui.pizza.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 //import android.ui.pizza.MainActivity;
 import android.ui.pizza.databinding.ActivityIntroBinding;
-import android.ui.pizza.ui.food.FoodActivity;
+import android.ui.pizza.view.food.FoodActivity;
 
 import java.util.Objects;
 

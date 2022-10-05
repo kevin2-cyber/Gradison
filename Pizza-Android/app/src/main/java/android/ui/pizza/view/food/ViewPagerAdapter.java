@@ -1,4 +1,4 @@
-package android.ui.pizza.ui.food;
+package android.ui.pizza.view.food;
 
 import android.content.Context;
 import android.ui.pizza.R;

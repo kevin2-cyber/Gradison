@@ -1,16 +1,16 @@
-package android.ui.pizza.ui.shopping;
+package android.ui.pizza.view.notifications;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class ShoppingViewModel extends ViewModel {
+public class NotificationsViewModel extends ViewModel {
 
     private final MutableLiveData<String> mText;
 
-    public ShoppingViewModel() {
+    public NotificationsViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is Shopping fragment");
+        mText.setValue("This is notifications fragment");
     }
 
     public LiveData<String> getText() {

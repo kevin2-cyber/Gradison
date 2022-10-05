@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/kDetailsBackground"
-    tools:context=".ui.food.FoodActivity">
+    tools:context=".view.food.FoodActivity">
 
     <LinearLayout
         android:id="@+id/ll_icons"

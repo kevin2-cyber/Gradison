@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="android.ui.pizza.ui.home.HomeFragment"
+        android:name="android.ui.pizza.view.home.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/navigation_shopping"
-        android:name="android.ui.pizza.ui.shopping.ShoppingFragment"
+        android:name="android.ui.pizza.view.shopping.ShoppingFragment"
         android:label="@string/title_shop"
         tools:layout="@layout/fragment_shopping" />
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="android.ui.pizza.ui.notifications.NotificationsFragment"
+        android:name="android.ui.pizza.view.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
 </navigation>
