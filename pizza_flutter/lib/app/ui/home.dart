@@ -55,7 +55,7 @@ class _HomeState extends State<Home> {
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 8),
                     child: TextFormField(
-                      decoration: InputDecoration(
+                      decoration: const InputDecoration(
                         enabledBorder: OutlineInputBorder(
                           borderSide: BorderSide(
                             color: AppColors.kPrimary,
