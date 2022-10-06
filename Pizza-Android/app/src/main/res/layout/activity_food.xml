@@ -94,6 +94,7 @@
             android:text="@string/_4_8"
             android:textSize="15sp"
             app:drawableStartCompat="@drawable/star"
+            android:drawablePadding="5dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
