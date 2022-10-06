@@ -7,5 +7,3 @@ void main() {
   runApp(const PizzaApp());
 
 }
-
-
