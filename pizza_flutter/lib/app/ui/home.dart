@@ -13,25 +13,67 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: <Widget>[
-          Row(
+      body: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
             children: <Widget>[
-              const Icon(
-                  Icons.location_on,
-                color: AppColors.kPrimary,
+              Row(
+                children: <Widget>[
+                  const Icon(
+                      Icons.location_on,
+                    color: AppColors.kPrimary,
+                  ),
+                  Text(
+                      'Nevada, US',
+                    style: GoogleFonts.poppins(
+                      fontSize: 15,
+                    ),
+                  ),
+                  const Icon(
+                      Icons.keyboard_arrow_down_outlined,
+                  color: AppColors.kPrimary,
+                  ),
+                ],
               ),
-              Text(
-                  'Nevada, US',
-                style: GoogleFonts.montserrat(),
+              Row(
+                children: <Widget>[
+                  Text(
+                      'Order Your Food\nFast and Free',
+                    style: GoogleFonts.poppins(
+                      fontSize: 25,
+                    ),
+                  ),
+                  const SizedBox(
+                    width: 50,
+                  ),
+                  Image.asset('assets/images/delivery.png'),
+                ],
               ),
-              const Icon(
-                  Icons.keyboard_arrow_down_outlined,
-              color: AppColors.kPrimary,
+              Row(
+                children: <Widget>[
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 8),
+                    child: TextFormField(
+                      decoration: InputDecoration(
+                        enabledBorder: OutlineInputBorder(
+                          borderSide: BorderSide(
+                            color: AppColors.kPrimary,
+                          ),
+                        ),
+                        focusedBorder: OutlineInputBorder(
+                          borderSide: BorderSide(
+                            color: Colors.white30,
+                          )
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
               ),
             ],
-          )
-        ],
+          ),
+        ),
       ),
     );
   }
