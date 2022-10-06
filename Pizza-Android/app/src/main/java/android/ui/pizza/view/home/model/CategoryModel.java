@@ -2,19 +2,19 @@ package android.ui.pizza.view.home.model;
 
 public class CategoryModel {
 
-    private String emoji;
+    private int emoji;
     private String categoryName;
 
-    public CategoryModel(String emoji, String categoryName) {
+    public CategoryModel(int emoji, String categoryName) {
         this.emoji = emoji;
         this.categoryName = categoryName;
     }
 
-    public String getEmoji() {
+    public int getEmoji() {
         return emoji;
     }
 
-    public void setEmoji(String emoji) {
+    public void setEmoji(int emoji) {
         this.emoji = emoji;
     }
 
