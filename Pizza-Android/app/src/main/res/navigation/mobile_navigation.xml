@@ -43,4 +43,14 @@
             android:id="@+id/action_navigation_notifications_to_navigation_home"
             app:destination="@id/navigation_home" />
     </fragment>
+    <activity
+        android:id="@+id/introActivity"
+        android:name="android.ui.pizza.view.IntroActivity"
+        android:label="activity_intro"
+        tools:layout="@layout/activity_intro"/>
+    <activity
+        android:id="@+id/foodActivity"
+        android:name="android.ui.pizza.view.food.FoodActivity"
+        android:label="activity_food"
+        tools:layout="@layout/activity_food" />
 </navigation>
