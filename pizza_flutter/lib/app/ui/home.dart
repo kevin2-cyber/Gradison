@@ -69,6 +69,10 @@ class _HomeState extends State<Home> {
                       ),
                     ),
                   ),
+                  IconButton(
+                    onPressed: (){},
+                    icon: Image.asset('assets/images/frame.png'),
+                  ),
                 ],
               ),
             ],
