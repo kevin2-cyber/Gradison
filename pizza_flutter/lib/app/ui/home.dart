@@ -10,6 +10,9 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+
+  Form key = GlobalKey(debugLabel: "key") as Form;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
