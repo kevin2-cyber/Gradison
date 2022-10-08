@@ -1,4 +1,4 @@
-package android.ui.pizza.ui.home.model;
+package android.ui.pizza.view.home.model;
 
 public class RatingModel {
 

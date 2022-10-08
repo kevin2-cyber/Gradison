@@ -1,6 +1,9 @@
-package android.ui.pizza.ui.home.adapter;
+package android.ui.pizza.view.home.adapter;
 
-import android.ui.pizza.ui.home.viewholder.CategoryViewHolder;
+import android.ui.pizza.R;
+import android.ui.pizza.view.home.viewholder.CategoryViewHolder;
+import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
@@ -10,12 +13,13 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryViewHolder> {
     @NonNull
     @Override
     public CategoryViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return null;
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.category_item, parent, false);
+        return new CategoryViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull CategoryViewHolder holder, int position) {
-
+            
     }
 
     @Override

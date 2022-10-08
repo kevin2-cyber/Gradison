@@ -1,4 +1,4 @@
-package android.ui.pizza.ui.home.viewholder;
+package android.ui.pizza.view.home.viewholder;
 
 import android.view.View;
 

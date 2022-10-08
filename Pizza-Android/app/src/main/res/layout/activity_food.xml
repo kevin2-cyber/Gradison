@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/kDetailsBackground"
-    tools:context=".ui.food.FoodActivity">
+    tools:context=".view.food.FoodActivity">
 
     <LinearLayout
         android:id="@+id/ll_icons"
@@ -40,63 +40,19 @@
 
     </LinearLayout>
 
-<!--    <ImageView-->
-<!--        android:id="@+id/iv_burger_image"-->
-<!--        android:layout_width="200dp"-->
-<!--        android:layout_height="200dp"-->
-<!--        android:contentDescription="@string/app_name"-->
-<!--        app:layout_constraintTop_toBottomOf="@id/ll_icons"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        android:layout_marginBottom="10dp"/>-->
 
-    <LinearLayout
-        android:id="@+id/ll_buttons"
-        android:layout_width="wrap_content"
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/vp_pager">
+        android:layout_marginTop="199dp"
+        android:background="@drawable/tab_selector"
+        app:layout_constraintBottom_toTopOf="@+id/cl_content"
+        app:layout_constraintTop_toTopOf="@+id/vp_pager"
+        app:tabGravity="center"
+        app:tabIndicatorHeight="0dp"/>
 
-        <ImageButton
-            android:id="@+id/ib_one"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_margin="5dp"
-            android:background="@drawable/pallet_normal"
-            android:contentDescription="@string/app_name"/>
-        <ImageButton
-            android:id="@+id/ib_two"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_margin="5dp"
-            android:background="@drawable/pallet_normal"
-            android:contentDescription="@string/app_name"/>
-        <ImageButton
-            android:id="@+id/ib_three"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_margin="5dp"
-            android:background="@drawable/pallet_normal"
-            android:contentDescription="@string/app_name"/>
-        <ImageButton
-            android:id="@+id/ib_four"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_margin="5dp"
-            android:background="@drawable/pallet_normal"
-            android:contentDescription="@string/app_name"/>
-        <ImageButton
-            android:id="@+id/ib_five"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_margin="5dp"
-            android:background="@drawable/pallet_normal"
-            android:contentDescription="@string/app_name"/>
-    </LinearLayout>
-
-    <androidx.viewpager2.widget.ViewPager2
+    <androidx.viewpager.widget.ViewPager
         android:id="@+id/vp_pager"
         android:layout_width="match_parent"
         android:layout_height="200dp"
@@ -109,7 +65,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/cl_content"
         android:layout_width="match_parent"
-        android:layout_height="440dp"
+        android:layout_height="460dp"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
         android:background="@drawable/bottom_nav_bar_corner"
@@ -138,6 +94,7 @@
             android:text="@string/_4_8"
             android:textSize="15sp"
             app:drawableStartCompat="@drawable/star"
+            android:drawablePadding="5dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -257,6 +214,7 @@
                     android:layout_height="wrap_content"
                     android:paddingStart="5dp"
                     android:paddingEnd="10dp"
+                    android:paddingBottom="5dp"
                     android:text="@string/medium"
                     android:textStyle="bold"
                     android:textSize="15sp"
@@ -293,6 +251,7 @@
                     android:layout_height="wrap_content"
                     android:paddingStart="5dp"
                     android:paddingEnd="10dp"
+                    android:paddingBottom="5dp"
                     android:text="@string/_554_kcal"
                     android:textStyle="bold"
                     android:textSize="15sp"
@@ -332,6 +291,7 @@
                     android:text="@string/_45_min"
                     android:textStyle="bold"
                     android:textSize="15sp"
+                    android:paddingBottom="5dp"
                     android:fontFamily="@font/poppins_medium"/>
 
             </LinearLayout>
@@ -453,6 +413,7 @@
             android:fontFamily="@font/poppins_medium"
             android:padding="5dp"
             android:text="@string/add_to_cart"
+            android:textColor="@color/faintWhite"
             android:textAllCaps="false"
             android:textSize="18sp"
             android:textStyle="bold"

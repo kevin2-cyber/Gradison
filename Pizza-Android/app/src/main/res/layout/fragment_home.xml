@@ -7,7 +7,7 @@
     android:paddingEnd="18dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.home.HomeFragment">
+    tools:context=".view.home.HomeFragment">
 
     <LinearLayout
         android:id="@+id/ll_text"

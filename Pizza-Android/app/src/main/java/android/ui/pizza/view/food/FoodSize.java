@@ -1,4 +1,4 @@
-package android.ui.pizza.ui.food;
+package android.ui.pizza.view.food;
 
 public enum FoodSize {
     High,

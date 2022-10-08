@@ -1,4 +1,4 @@
-package android.ui.pizza.ui.shopping;
+package android.ui.pizza.view.shopping;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
