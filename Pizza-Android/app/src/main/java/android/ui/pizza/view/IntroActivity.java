@@ -24,6 +24,7 @@ public class IntroActivity extends AppCompatActivity {
 
         binding.btnStart.setOnClickListener(view -> {
             startActivity(new Intent(this, FoodActivity.class));
+            finish();
         });
     }
 
