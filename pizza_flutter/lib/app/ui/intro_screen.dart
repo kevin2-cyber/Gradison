@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import '/core/app_colors.dart';
-import 'home.dart';
+import '../../utils/demo_page_view.dart';
+import '/core/core.dart';
 
 class IntroScreen extends StatefulWidget {
   const IntroScreen({Key? key}) : super(key: key);
@@ -18,11 +18,11 @@ class _IntroScreenState extends State<IntroScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        decoration: const BoxDecoration(
+        decoration: BoxDecoration(
           image: DecorationImage(
-            colorFilter: ColorFilter.mode(Colors.black38, BlendMode.darken),
+            colorFilter: const ColorFilter.mode(Colors.black38, BlendMode.darken),
             image: AssetImage(
-                "assets/images/back.jpg",
+                AppAssets.kBackImage,
             ),
             fit: BoxFit.fill,
           )
@@ -74,7 +74,7 @@ class _IntroScreenState extends State<IntroScreen> {
           onPressed: () {
             Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => const Home()));
+                MaterialPageRoute(builder: (context) => const DemoPageView()));
           },
           child: const Icon(Icons.arrow_forward_ios, color: Colors.white,),
         ),
