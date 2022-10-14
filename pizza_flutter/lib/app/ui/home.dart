@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import '/core/app_colors.dart';
+import '/core/core.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -50,7 +50,7 @@ class _HomeState extends State<Home> {
                   const SizedBox(
                     width: 50,
                   ),
-                  Image.asset('assets/images/delivery.png'),
+                  Image.asset(AppAssets.kDeliveryImage),
                 ],
               ),
               Row(
@@ -75,7 +75,7 @@ class _HomeState extends State<Home> {
                   ),
                   IconButton(
                     onPressed: (){},
-                    icon: Image.asset('assets/images/frame.png'),
+                    icon: Image.asset(AppAssets.kFrameImage),
                   ),
                 ],
               ),
