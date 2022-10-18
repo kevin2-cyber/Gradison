@@ -37,9 +37,7 @@ public class FoodActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(binding.getRoot());
 
-        binding.ibArrow.setOnClickListener(view -> {
-            startActivity(new Intent(this, IntroActivity.class));
-        });
+        binding.ibArrow.setOnClickListener(view -> startActivity(new Intent(this, IntroActivity.class)));
 
         Objects.requireNonNull(getSupportActionBar()).hide();
 

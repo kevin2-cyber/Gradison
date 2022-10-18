@@ -1,6 +1,7 @@
 package android.ui.pizza.view;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.splashscreen.SplashScreen;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -18,6 +19,12 @@ public class IntroActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         binding = ActivityIntroBinding.inflate(getLayoutInflater());
         super.onCreate(savedInstanceState);
+        SplashScreen splashScreen = SplashScreen.installSplashScreen(this);
+        try {
+            splashScreen.wait(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         setContentView(binding.getRoot());
 
         Objects.requireNonNull(getSupportActionBar()).hide();
