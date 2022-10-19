@@ -20,11 +20,11 @@ public class IntroActivity extends AppCompatActivity {
         binding = ActivityIntroBinding.inflate(getLayoutInflater());
         super.onCreate(savedInstanceState);
         SplashScreen splashScreen = SplashScreen.installSplashScreen(this);
-        try {
-            splashScreen.wait(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            splashScreen.wait(3000);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
         setContentView(binding.getRoot());
 
         Objects.requireNonNull(getSupportActionBar()).hide();
