@@ -2,9 +2,9 @@
 <resources>
     <style name="Theme.Splash.Pizza" parent="Theme.Pizza">
 
-        <item name="android:windowSplashScreenAnimatedIcon">@drawable/chickenburger</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/back</item>
 
-        <item name="android:windowSplashScreenBackground">@color/kPrimary</item>
+        <item name="android:windowSplashScreenBackground">@color/faintWhite</item>
 
         <item name="android:windowSplashScreenAnimationDuration">3000</item>
 
