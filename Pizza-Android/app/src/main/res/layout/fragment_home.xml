@@ -57,10 +57,6 @@
         android:orientation="horizontal"
         app:layout_constraintTop_toBottomOf="@id/ll_text">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -69,13 +65,6 @@
                 android:fontFamily="@font/roboto"
                 android:textSize="30sp"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/fast_and_free"
-                android:fontFamily="@font/roboto"
-                android:textSize="30sp"/>
-        </LinearLayout>
         
         <ImageView
             android:layout_width="70dp"
@@ -125,7 +114,7 @@
         android:id="@+id/tv_cat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/categories"
+        android:text=""
         android:layout_marginTop="20dp"
         android:fontFamily="@font/roboto"
         android:textSize="18sp"

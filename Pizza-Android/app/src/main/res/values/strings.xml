@@ -8,10 +8,8 @@
     <string name="most">Find the most delicious food \nwith the best quality and free delivery here</string>
     <string name="skip">Skip</string>
     <string name="nevada_us">Nevada, US</string>
-    <string name="order_your_food">Order Your Food</string>
-    <string name="fast_and_free">Fast and Free</string>
+    <string name="order_your_food">Order Your Food\nFast and Free</string>
     <string name="search">Search</string>
-    <string name="categories">Categories</string>
     <string name="burger_emoji">🍔</string>
     <string name="burger">Burger</string>
     <string name="pizza_emoji">🍕</string>
