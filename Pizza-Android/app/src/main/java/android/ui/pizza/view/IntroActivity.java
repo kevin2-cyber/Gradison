@@ -16,6 +16,8 @@ public class IntroActivity extends AppCompatActivity {
 
     ActivityIntroBinding binding;
 
+    //140.82.121.3
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         binding = ActivityIntroBinding.inflate(getLayoutInflater());
