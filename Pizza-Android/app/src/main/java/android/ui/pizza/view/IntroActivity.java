@@ -6,6 +6,7 @@ import androidx.core.splashscreen.SplashScreen;
 import android.content.Intent;
 import android.os.Bundle;
 //import android.ui.pizza.MainActivity;
+import android.ui.pizza.R;
 import android.ui.pizza.databinding.ActivityIntroBinding;
 import android.ui.pizza.view.food.FoodActivity;
 
