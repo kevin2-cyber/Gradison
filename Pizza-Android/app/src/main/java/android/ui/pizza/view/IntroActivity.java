@@ -6,6 +6,7 @@ import androidx.core.splashscreen.SplashScreen;
 import android.content.Intent;
 import android.os.Bundle;
 //import android.ui.pizza.MainActivity;
+import android.ui.pizza.R;
 import android.ui.pizza.databinding.ActivityIntroBinding;
 import android.ui.pizza.view.food.FoodActivity;
 
@@ -20,11 +21,6 @@ public class IntroActivity extends AppCompatActivity {
         binding = ActivityIntroBinding.inflate(getLayoutInflater());
         super.onCreate(savedInstanceState);
         SplashScreen splashScreen = SplashScreen.installSplashScreen(this);
-//        try {
-//            splashScreen.wait(3000);
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//        }
         setContentView(binding.getRoot());
 
         Objects.requireNonNull(getSupportActionBar()).hide();
