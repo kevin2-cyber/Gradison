@@ -10,8 +10,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Splash.Pizza"
-        tools:targetApi="31">
+        android:theme="@style/Theme.Splash.Pizza">
         <activity
             android:name=".view.food.FoodActivity"
             android:exported="false">
