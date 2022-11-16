@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import '/core/core.dart';
 
 class Home extends StatefulWidget {
@@ -15,11 +14,11 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
-    var screenSize  = MediaQuery.of(context).size;
+    var kSpacingX  = MediaQuery.of(context).size;
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.only(left: 16.0),
+          padding: const EdgeInsets.only(left: 16.0, top: 16.0),
           child: Column(
             children: <Widget>[
               Row(
@@ -41,7 +40,7 @@ class _HomeState extends State<Home> {
                 ],
               ),
               SizedBox(
-                height: screenSize.height * 0.01,
+                height: kSpacingX.height * 0.01,
               ),
               Row(
                 children: <Widget>[
@@ -52,7 +51,7 @@ class _HomeState extends State<Home> {
                     ),
                   ),
                   SizedBox(
-                    width: screenSize.width * 0.2,
+                    width: kSpacingX.width * 0.2,
                   ),
                   Image.asset(AppAssets.kDeliveryImage),
                 ],
@@ -60,8 +59,8 @@ class _HomeState extends State<Home> {
               Row(
                 children: <Widget>[
                   SizedBox(
-                    width: screenSize.width * 0.66,
-                    height: screenSize.height * 0.05,
+                    width: kSpacingX.width * 0.66,
+                    height: kSpacingX.height * 0.05,
                     child: TextFormField(
                       keyboardType: TextInputType.text,
                       decoration: InputDecoration(
@@ -81,8 +80,8 @@ class _HomeState extends State<Home> {
                     ),
                   ),
                   SizedBox(
-                    height: screenSize.height * 0.1,
-                    width: screenSize.width * 0.3,
+                    height: kSpacingX.height * 0.1,
+                    width: kSpacingX.width * 0.3,
                     child: IconButton(
                       onPressed: (){},
                       icon: Image.asset(
