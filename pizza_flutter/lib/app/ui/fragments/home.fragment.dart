@@ -143,15 +143,43 @@ class _HomeFragmentState extends State<HomeFragment> {
                 primary: false,
                 crossAxisSpacing: 10,
                 mainAxisSpacing: 10,
-                children: const [
-                  GridViewCard(),
-                  GridViewCard(),
-                  GridViewCard(),
-                  GridViewCard(),
-                  GridViewCard(),
-                  GridViewCard(),
-                  GridViewCard(),
-                  GridViewCard(),
+                children: [
+                  GridViewCard(
+                    image: AppAssets.kChickenBurger,
+                    title: 'Chicken Burger',
+                    text: '200 gr chicken + cheese\nLettuce + tomato',
+                    amount: '22.00',
+                  ),
+                  GridViewCard(
+                    image: AppAssets.kCheeseBurger,
+                    title: 'Cheese Burger',
+                    text: '200 gr meat + Lettuce\ncheese + onion + tomato',
+                    amount: '25.00',
+                  ),
+                  GridViewCard(
+                    image: AppAssets.kChickenBurger,
+                    title: 'Chicken Burger',
+                    text: '200 gr chicken + cheese\nLettuce + tomato',
+                    amount: '22.00',
+                  ),
+                  GridViewCard(
+                    image: AppAssets.kCheeseBurger,
+                    title: 'Cheese Burger',
+                    text: '200 gr meat + Lettuce\ncheese + onion + tomato',
+                    amount: '25.00',
+                  ),
+                  GridViewCard(
+                    image: AppAssets.kChickenBurger,
+                    title: 'Chicken Burger',
+                    text: '200 gr chicken + cheese\nLettuce + tomato',
+                    amount: '22.00',
+                  ),
+                  GridViewCard(
+                    image: AppAssets.kCheeseBurger,
+                    title: 'Cheese Burger',
+                    text: '200 gr meat + Lettuce\ncheese + onion + tomato',
+                    amount: '25.00',
+                  ),
                 ],
               ),
             ),
@@ -161,5 +189,3 @@ class _HomeFragmentState extends State<HomeFragment> {
     );
   }
 }
-
-

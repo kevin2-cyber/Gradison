@@ -3,8 +3,16 @@ import 'package:flutter/material.dart';
 import '../../core/core.dart';
 
 class GridViewCard extends StatelessWidget {
+  final String image;
+  final String title;
+  final String text;
+  final String amount;
   const GridViewCard({
     super.key,
+    required this.image,
+    required this.title,
+    required this.text,
+    required this.amount,
   });
 
   @override
@@ -36,22 +44,22 @@ class GridViewCard extends StatelessWidget {
             Positioned(
               top: AppConstants.sizeConfig(context, 0.03).height,
               left: AppConstants.sizeConfig(context, 0.12).width,
-              child: Image.asset(AppAssets.kChickenBurger),
+              child: Image.asset(image),
             ),
             Positioned(
               top: AppConstants.sizeConfig(context, 0.109).height,
               left: AppConstants.sizeConfig(context, 0.05).width,
               child: Column(
-                children: const [
+                children:  [
                   Text(
-                    'Chicken burger',
-                    style: TextStyle(
+                    title,
+                    style: const TextStyle(
                       fontSize: 20,
                     ),
                   ),
                   Text(
-                    '200 gr chicken + cheese\nLettuce + tomato',
-                    style: TextStyle(
+                    text,
+                    style: const TextStyle(
                       fontSize: 13,
                     ),
                   ),
@@ -61,9 +69,9 @@ class GridViewCard extends StatelessWidget {
             Positioned(
               top: AppConstants.sizeConfig(context, 0.17).height,
               left: AppConstants.sizeConfig(context, 0.03).width,
-              child: const Text(
-                '\$ 22.oo',
-                style: TextStyle(
+              child: Text(
+                '\$ $amount',
+                style: const TextStyle(
                   color: AppColors.kPrimary,
                   fontWeight: FontWeight.bold,
                   fontSize: 20,
