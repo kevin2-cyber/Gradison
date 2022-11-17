@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../../core/app.colors.dart';
-import '../../core/constants.dart';
 import '../../core/core.dart';
 
 class GridViewCard extends StatelessWidget {

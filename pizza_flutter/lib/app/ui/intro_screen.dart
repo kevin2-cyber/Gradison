@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:pizza_flutter/core/constants.dart';
 import '/core/core.dart';
 import 'home.dart';
 

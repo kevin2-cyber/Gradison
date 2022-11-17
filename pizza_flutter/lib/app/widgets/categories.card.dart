@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:pizza_flutter/core/app.colors.dart';
-import 'package:pizza_flutter/core/constants.dart';
+
+import '../../core/core.dart';
+
 
 class CategoryCard extends StatelessWidget {
   final Color bgColor;
