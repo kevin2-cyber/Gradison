@@ -6,7 +6,7 @@ class AppAssets {
   static String kCircleImage  = "assets/images/circle.png";
   static String kImageBkg = "assets/images/imagebkg.jpg";
   static String kImg = "assets/images/img.png";
-  static String kImg1 = "assets/images/img_1.png";
+  static String kImg1 = "assets/images/home.png";
   static String kShopping = "assets/images/shopping.png";
   static String kStar = "assets/images/star.png";
   static String kCheeseBurger = "assets/images/cheseburger.png";
