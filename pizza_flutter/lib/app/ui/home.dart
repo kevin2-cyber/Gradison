@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../widgets/categories.card.dart';
+import 'package:pizza_flutter/app/ui/fragments/home.fragment.dart';
 import '/core/core.dart';
 
 class Home extends StatefulWidget {
@@ -10,132 +10,70 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  int _selectedIndex = 0;
   // Form key = GlobalKey(debugLabel: "key") as Form;
+
+  final _widgetOptions = [
+    const HomeFragment(),
+    const SafeArea(
+      child: Center(
+        child: Text(
+          'Will Implement this feature soon',
+          style: TextStyle(
+              color: Colors.black54,
+              fontSize: 50,
+          ),
+        ),
+      ),
+    ),
+    const SafeArea(
+      child: Center(
+        child: Text(
+          'Will Implement this feature soon',
+          style: TextStyle(
+              color: Colors.black54,
+              fontSize: 50,
+          ),
+        ),
+      ),
+    ),
+  ];
+  void _onItemTapped(int index) {
+    setState(() {
+      _selectedIndex = index;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
-    var kSpacingX = MediaQuery.of(context).size;
     return Scaffold(
-      body: SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.only(left: 16.0, top: 16.0),
-          child: Column(
-            children: <Widget>[
-              Row(
-                children: const <Widget>[
-                  Icon(
-                    Icons.location_on,
-                    color: AppColors.kPrimary,
-                  ),
-                  Text(
-                    'Nevada, US',
-                    style: TextStyle(
-                      fontSize: 15,
-                    ),
-                  ),
-                  Icon(
-                    Icons.keyboard_arrow_down_outlined,
-                    color: AppColors.kPrimary,
-                  ),
-                ],
-              ),
-              SizedBox(
-                height: kSpacingX.height * 0.01,
-              ),
-              Row(
-                children: <Widget>[
-                  const Text(
-                    'Order Your Food\nFast and Free',
-                    style: TextStyle(
-                      fontSize: 25,
-                    ),
-                  ),
-                  SizedBox(
-                    width: kSpacingX.width * 0.2,
-                  ),
-                  Image.asset(AppAssets.kDeliveryImage),
-                ],
-              ),
-              Row(
-                children: <Widget>[
-                  SizedBox(
-                    width: kSpacingX.width * 0.66,
-                    height: kSpacingX.height * 0.05,
-                    child: TextFormField(
-                      keyboardType: TextInputType.text,
-                      decoration: InputDecoration(
-                        label: const Text('Search'),
-                        prefixIcon: const Icon(Icons.search),
-                        enabledBorder: OutlineInputBorder(
-                          borderSide: BorderSide(
-                            color: Colors.grey.shade300,
-                          ),
-                        ),
-                        focusedBorder: const OutlineInputBorder(
-                            borderSide: BorderSide(
-                          color: AppColors.kPrimary,
-                        )),
-                      ),
-                    ),
-                  ),
-                  SizedBox(
-                    height: kSpacingX.height * 0.1,
-                    width: kSpacingX.width * 0.3,
-                    child: IconButton(
-                      onPressed: () {},
-                      icon: Image.asset(AppAssets.kFrameImage),
-                    ),
-                  ),
-                ],
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: const [
-                  Text(
-                    'Categories',
-                    style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.w500,
-                    ),
-                  ),
-                ],
-              ),
-              SizedBox(
-                height: kSpacingX.height * 0.01,
-              ),
-              SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: Row(
-                  children: const [
-                    CategoryCard(
-                      bgColor: AppColors.kPrimary,
-                      asset: '🍔',
-                      title: 'Burger',
-                      textColor: Colors.white,
-                    ),
-                    CategoryCard(
-                      bgColor: Colors.white,
-                      asset: '🍕',
-                      title: 'Pizza',
-                      textColor: Colors.black,
-                    ),
-                    CategoryCard(
-                      bgColor: Colors.white,
-                      asset: '🌭',
-                      title: 'Sandwich',
-                      textColor: Colors.black,
-                    ),
-                    CategoryCard(
-                      bgColor: Colors.white,
-                      asset: '🍔',
-                      title: 'Burger',
-                      textColor: Colors.black,
-                    ),
-                  ],
+      body: Container(
+        child: _widgetOptions.elementAt(_selectedIndex),
+      ),
+      bottomNavigationBar: ClipRRect(
+        borderRadius: const BorderRadius.only(
+          topRight: Radius.circular(24),
+          topLeft: Radius.circular(24),
+        ),
+        child: BottomNavigationBar(
+          items: [
+            BottomNavigationBarItem(
+                icon: Image.asset(
+                  AppAssets.kHomeIcon,
+                  width: 35,
+                  height: 35,
                 ),
-              ),
-            ],
-          ),
+                label: 'Home'),
+            BottomNavigationBarItem(
+              icon: Image.asset(AppAssets.kShoppingIcon),
+              label: 'Shopping',
+            ),
+            BottomNavigationBarItem(
+                icon: Image.asset(AppAssets.kCircleIcon), label: 'Settings'),
+          ],
+          currentIndex: _selectedIndex,
+          selectedItemColor: Colors.white,
+          onTap: _onItemTapped,
         ),
       ),
     );

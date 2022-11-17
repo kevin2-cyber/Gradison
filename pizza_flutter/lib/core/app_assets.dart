@@ -1,14 +1,17 @@
 
 class AppAssets {
-  static String kFrameImage = 'assets/images/frame.png';
+  // Images
   static String kDeliveryImage = 'assets/images/delivery.png';
   static String kBackImage = "assets/images/back.jpg";
-  static String kCircleImage  = "assets/icon/circle.png";
-  static String kImageBkg = "assets/images/imagebkg.jpg";
+  static String kImageBkg = "assets/images/imagebg.jpg";
   static String kImg = "assets/images/img.png";
-  static String kImg1 = "assets/icons/home.png";
-  static String kShopping = "assets/icons/shopping.png";
-  static String kStar = "assets/icons/star.png";
-  static String kCheeseBurger = "assets/images/cheseburger.png";
+  static String kCheeseBurger = "assets/images/cheeseburger.png";
   static String kChickenBurger = "assets/images/chicken.png";
+
+  // Icons
+  static String kStarIcon = "assets/icons/star.png";
+  static String kHomeIcon = "assets/icons/home.png";
+  static String kShoppingIcon = "assets/icons/shopping.png";
+  static String kCircleIcon  = "assets/icons/circle.png";
+  static String kFilterICon = 'assets/icons/frame.png';
 }
