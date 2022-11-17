@@ -1,18 +1,25 @@
 import 'package:flutter/material.dart';
-import 'package:pizza_flutter/core/app_colors.dart';
+import 'package:pizza_flutter/core/app.colors.dart';
+import 'package:pizza_flutter/core/constants.dart';
 
 class CategoryCard extends StatelessWidget {
   final Color bgColor;
   final String asset;
   final String title;
   final Color textColor;
-  const CategoryCard({Key? key, required this.bgColor, required this.asset, required this.title, required this.textColor}) : super(key: key);
+  const CategoryCard(
+      {Key? key,
+      required this.bgColor,
+      required this.asset,
+      required this.title,
+      required this.textColor})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: MediaQuery.of(context).size.width * 0.35,
-      height: MediaQuery.of(context).size.height * 0.05,
+      width: AppConstants.sizeConfig(context, 0.35).width,
+      height: AppConstants.sizeConfig(context, 0.05).height,
       child: Card(
         color: bgColor,
         shape: RoundedRectangleBorder(
@@ -26,13 +33,13 @@ class CategoryCard extends StatelessWidget {
           child: Row(
             children: [
               Text(
-                  asset,
-                style: TextStyle(
+                asset,
+                style: const TextStyle(
                   fontSize: 20,
                 ),
               ),
               Text(
-                  title,
+                title,
                 style: TextStyle(
                   fontSize: 20,
                   color: textColor,

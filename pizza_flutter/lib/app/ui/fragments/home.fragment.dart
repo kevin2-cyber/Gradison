@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pizza_flutter/core/constants.dart';
 import 'package:pizza_flutter/core/core.dart';
 
 import '../../widgets/categories.card.dart';
@@ -13,7 +14,6 @@ class HomeFragment extends StatefulWidget {
 class _HomeFragmentState extends State<HomeFragment> {
   @override
   Widget build(BuildContext context) {
-    var kSpacingX = MediaQuery.of(context).size;
     return SafeArea(
       child: Padding(
         padding: const EdgeInsets.only(left: 16.0, top: 16.0),
@@ -38,7 +38,7 @@ class _HomeFragmentState extends State<HomeFragment> {
               ],
             ),
             SizedBox(
-              height: kSpacingX.height * 0.01,
+              height: AppConstants.sizeConfig(context, 0.01).height,
             ),
             Row(
               children: <Widget>[
@@ -49,7 +49,7 @@ class _HomeFragmentState extends State<HomeFragment> {
                   ),
                 ),
                 SizedBox(
-                  width: kSpacingX.width * 0.2,
+                  width: AppConstants.sizeConfig(context, 0.2).width,
                 ),
                 Image.asset(AppAssets.kDeliveryImage),
               ],
@@ -57,8 +57,8 @@ class _HomeFragmentState extends State<HomeFragment> {
             Row(
               children: <Widget>[
                 SizedBox(
-                  width: kSpacingX.width * 0.66,
-                  height: kSpacingX.height * 0.05,
+                  width: AppConstants.sizeConfig(context, 0.66).width,
+                  height: AppConstants.sizeConfig(context, 0.05).height,
                   child: TextFormField(
                     keyboardType: TextInputType.text,
                     decoration: InputDecoration(
@@ -77,8 +77,8 @@ class _HomeFragmentState extends State<HomeFragment> {
                   ),
                 ),
                 SizedBox(
-                  height: kSpacingX.height * 0.1,
-                  width: kSpacingX.width * 0.3,
+                  height: AppConstants.sizeConfig(context, 0.1).height,
+                  width: AppConstants.sizeConfig(context, 0.3).width,
                   child: IconButton(
                     onPressed: () {},
                     icon: Image.asset(AppAssets.kFilterICon),
@@ -99,7 +99,7 @@ class _HomeFragmentState extends State<HomeFragment> {
               ],
             ),
             SizedBox(
-              height: kSpacingX.height * 0.01,
+              height: AppConstants.sizeConfig(context, 0.01).height,
             ),
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
