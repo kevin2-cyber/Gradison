@@ -3,6 +3,7 @@ import 'package:pizza_flutter/core/constants.dart';
 import 'package:pizza_flutter/core/core.dart';
 
 import '../../widgets/categories.card.dart';
+import '../../widgets/grid.view.card.dart';
 
 class HomeFragment extends StatefulWidget {
   const HomeFragment({Key? key}) : super(key: key);
@@ -71,8 +72,8 @@ class _HomeFragmentState extends State<HomeFragment> {
                       ),
                       focusedBorder: const OutlineInputBorder(
                           borderSide: BorderSide(
-                            color: AppColors.kPrimary,
-                          )),
+                        color: AppColors.kPrimary,
+                      )),
                     ),
                   ),
                 ),
@@ -132,9 +133,34 @@ class _HomeFragmentState extends State<HomeFragment> {
                 ],
               ),
             ),
+            SizedBox(
+              height: AppConstants.sizeConfig(context, 0.01).height,
+            ),
+            SizedBox(
+              height: AppConstants.sizeConfig(context, 0.4).height,
+              width: AppConstants.sizeConfig(context, 1).width,
+              child: GridView.count(
+                crossAxisCount: 2,
+                primary: false,
+                crossAxisSpacing: 10,
+                mainAxisSpacing: 10,
+                children: const [
+                  GridViewCard(),
+                  GridViewCard(),
+                  GridViewCard(),
+                  GridViewCard(),
+                  GridViewCard(),
+                  GridViewCard(),
+                  GridViewCard(),
+                  GridViewCard(),
+                ],
+              ),
+            ),
           ],
         ),
       ),
     );
   }
 }
+
+

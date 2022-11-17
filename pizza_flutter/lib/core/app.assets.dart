@@ -5,7 +5,7 @@ class AppAssets {
   static String kBackImage = "assets/images/back.jpg";
   static String kImageBkg = "assets/images/imagebg.jpg";
   static String kImg = "assets/images/img.png";
-  static String kCheeseBurger = "assets/images/cheeseburger.png";
+  static String kCheeseBurger = "assets/images/cheese.png";
   static String kChickenBurger = "assets/images/chicken.png";
 
   // Icons

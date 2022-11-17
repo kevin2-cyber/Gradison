@@ -56,6 +56,7 @@ class _HomeState extends State<Home> {
           topLeft: Radius.circular(24),
         ),
         child: BottomNavigationBar(
+          backgroundColor: Colors.white60,
           items: [
             BottomNavigationBarItem(
                 icon: Image.asset(
@@ -63,16 +64,18 @@ class _HomeState extends State<Home> {
                   width: 35,
                   height: 35,
                 ),
-                label: 'Home'),
+                label: 'Home',
+            ),
             BottomNavigationBarItem(
               icon: Image.asset(AppAssets.kShoppingIcon),
               label: 'Shopping',
             ),
             BottomNavigationBarItem(
-                icon: Image.asset(AppAssets.kCircleIcon), label: 'Settings'),
+                icon: Image.asset(AppAssets.kCircleIcon),
+                label: 'Settings'),
           ],
           currentIndex: _selectedIndex,
-          selectedItemColor: Colors.white,
+          selectedItemColor: AppColors.kPrimary,
           onTap: _onItemTapped,
         ),
       ),
