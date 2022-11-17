@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import '../../utils/demo_page_view.dart';
 import '/core/core.dart';
+import 'home.dart';
 
 class IntroScreen extends StatefulWidget {
   const IntroScreen({Key? key}) : super(key: key);
@@ -16,6 +15,7 @@ class _IntroScreenState extends State<IntroScreen> {
 
   @override
   Widget build(BuildContext context) {
+    var screenSize = MediaQuery.of(context).size;
     return Scaffold(
       body: Container(
         decoration: BoxDecoration(
@@ -30,34 +30,34 @@ class _IntroScreenState extends State<IntroScreen> {
         child: Stack(
           children: [
             Positioned(
-              top: 800,
-              left: 185,
-              child: Text(
+              top: screenSize.height * 0.88,
+              left: screenSize.width * 0.47,
+              child: const Text(
                   'Skip',
-                style: GoogleFonts.poppins(
+                style: TextStyle(
                   color: Colors.white54,
                   fontSize: 15,
                 ),
               ),
             ),
-            Positioned(
+            const Positioned(
               top: 400,
               left: 30,
               child: Text(
                   'Find and Get \nYour best Food',
-                style: GoogleFonts.poppins(
+                style: TextStyle(
                   color: Colors.white,
                   fontSize: 30,
                   fontWeight: FontWeight.w500,
                 ),
               ),
             ),
-            Positioned(
+            const Positioned(
               top: 500,
               left: 30,
               child: Text(
                 'Find the most delicious food\nwith the best quality and delivery here',
-                style: GoogleFonts.poppins(
+                style: TextStyle(
                   color: Colors.white,
                   fontSize: 15,
                   fontWeight: FontWeight.w500,
@@ -74,7 +74,7 @@ class _IntroScreenState extends State<IntroScreen> {
           onPressed: () {
             Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => const DemoPageView()));
+                MaterialPageRoute(builder: (context) => const Home()));
           },
           child: const Icon(Icons.arrow_forward_ios, color: Colors.white,),
         ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import '/app/ui/intro_screen.dart';
 
 class PizzaApp extends StatelessWidget {
@@ -10,8 +11,12 @@ class PizzaApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Pizza',
       themeMode: ThemeMode.system,
-      theme: ThemeData.light(),
-      darkTheme: ThemeData.dark(),
+      theme: ThemeData.light().copyWith(
+        textTheme: GoogleFonts.playTextTheme(),
+      ),
+      darkTheme: ThemeData.dark().copyWith(
+        textTheme: GoogleFonts.playTextTheme(),
+      ),
       home: const IntroScreen(),
     );
   }
