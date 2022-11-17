@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pizza_flutter/app/ui/food.dart';
 import 'package:pizza_flutter/core/core.dart';
 
 import '../../widgets/categories.card.dart';
@@ -81,7 +82,7 @@ class _HomeFragmentState extends State<HomeFragment> {
                   width: AppConstants.sizeConfig(context, 0.3).width,
                   child: IconButton(
                     onPressed: () {},
-                    icon: Image.asset(AppAssets.kFilterICon),
+                    icon: Image.asset(AppAssets.kFilterIcon),
                   ),
                 ),
               ],
@@ -136,7 +137,7 @@ class _HomeFragmentState extends State<HomeFragment> {
               height: AppConstants.sizeConfig(context, 0.01).height,
             ),
             SizedBox(
-              height: AppConstants.sizeConfig(context, 0.4).height,
+              height: AppConstants.sizeConfig(context, 0.48).height,
               width: AppConstants.sizeConfig(context, 1).width,
               child: GridView.count(
                 crossAxisCount: 2,
@@ -144,11 +145,16 @@ class _HomeFragmentState extends State<HomeFragment> {
                 crossAxisSpacing: 10,
                 mainAxisSpacing: 10,
                 children: [
-                  GridViewCard(
-                    image: AppAssets.kChickenBurger,
-                    title: 'Chicken Burger',
-                    text: '200 gr chicken + cheese\nLettuce + tomato',
-                    amount: '22.00',
+                  GestureDetector(
+                    onTap: (){
+                      Navigator.of(context).push(MaterialPageRoute(builder: (context) => const Food()));
+                    },
+                    child: GridViewCard(
+                      image: AppAssets.kChickenBurger,
+                      title: 'Chicken Burger',
+                      text: '200 gr chicken + cheese\nLettuce + tomato',
+                      amount: '22.00',
+                    ),
                   ),
                   GridViewCard(
                     image: AppAssets.kCheeseBurger,
