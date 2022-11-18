@@ -15,7 +15,6 @@ class _IntroScreenState extends State<IntroScreen> {
 
   @override
   Widget build(BuildContext context) {
-    var screenSize = MediaQuery.of(context).size;
     return Scaffold(
       body: Container(
         decoration: BoxDecoration(
@@ -30,8 +29,8 @@ class _IntroScreenState extends State<IntroScreen> {
         child: Stack(
           children: [
             Positioned(
-              top: screenSize.height * 0.88,
-              left: screenSize.width * 0.47,
+              top: AppConstants.sizeConfig(context, 0.88).height,
+              left: AppConstants.sizeConfig(context, 0.47).width,
               child: const Text(
                   'Skip',
                 style: TextStyle(

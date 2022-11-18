@@ -13,7 +13,7 @@ void main() {
           fontWeight: FontWeight.bold,
           fontSize: 20,
         ),
-      )
+      ),
     ),
   );
 
