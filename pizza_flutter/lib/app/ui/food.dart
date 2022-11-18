@@ -68,6 +68,7 @@ class Food extends StatelessWidget {
                       height: AppConstants.sizeConfig(context, 0.02).height,
                     ),
                     Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: const [
                         Text(
                             '\$ 22.00',
