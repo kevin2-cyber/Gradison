@@ -69,14 +69,53 @@ class Food extends StatelessWidget {
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: const [
-                        Text(
+                      children: [
+                        const Text(
                             '\$ 22.00',
                           style: TextStyle(
                             fontSize: 20,
                             color: AppColors.kPrimary,
                           ),
-                        )
+                        ),
+                        ClipRRect(
+                          borderRadius: const BorderRadius.only(
+                            topRight: Radius.circular(25),
+                            topLeft: Radius.circular(25),
+                            bottomLeft: Radius.circular(25),
+                            bottomRight: Radius.circular(25)
+                          ),
+                          child: Container(
+                            height: AppConstants.sizeConfig(context, 0.05).height,
+                            width: AppConstants.sizeConfig(context, 0.3).width,
+                            color: AppColors.kFoodbg,
+                            padding: const EdgeInsets.symmetric(vertical: 2, horizontal: 2),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: const [
+                                CircleAvatar(
+                                  backgroundColor: AppColors.kPrimary,
+                                  child: Icon(
+                                      Icons.minimize_outlined,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                                Text(
+                                    '1',
+                                  style: TextStyle(
+                                    fontSize: 20,
+                                  ),
+                                ),
+                                CircleAvatar(
+                                  backgroundColor: AppColors.kPrimary,
+                                  child: Icon(
+                                      Icons.add,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
                       ],
                     ),
                   ],
