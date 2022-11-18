@@ -50,33 +50,48 @@ class _HomeState extends State<Home> {
       body: Container(
         child: _widgetOptions.elementAt(_selectedIndex),
       ),
-      bottomNavigationBar: ClipRRect(
-        borderRadius: const BorderRadius.only(
-          topRight: Radius.circular(24),
-          topLeft: Radius.circular(24),
-        ),
-        child: BottomNavigationBar(
-          backgroundColor: Colors.white60,
-          items: [
-            BottomNavigationBarItem(
-                icon: Image.asset(
-                  AppAssets.kHomeIcon,
-                  width: 35,
-                  height: 35,
-                ),
-                label: 'Home',
+      bottomNavigationBar: Container(
+        decoration: const BoxDecoration(
+          borderRadius: BorderRadius.only(
+            topRight: Radius.circular(30),
+            topLeft: Radius.circular(30),
+          ),
+          boxShadow: [
+            BoxShadow(
+                color: Colors.black38,
+              spreadRadius: 0,
+                blurRadius: 10,
             ),
-            BottomNavigationBarItem(
-              icon: Image.asset(AppAssets.kShoppingIcon),
-              label: 'Shopping',
-            ),
-            BottomNavigationBarItem(
-                icon: Image.asset(AppAssets.kCircleIcon),
-                label: 'Settings'),
           ],
-          currentIndex: _selectedIndex,
-          selectedItemColor: AppColors.kPrimary,
-          onTap: _onItemTapped,
+        ),
+        child: ClipRRect(
+          borderRadius: const BorderRadius.only(
+            topRight: Radius.circular(30),
+            topLeft: Radius.circular(30),
+          ),
+          child: BottomNavigationBar(
+            backgroundColor: Colors.white,
+            items: [
+              BottomNavigationBarItem(
+                  icon: Image.asset(
+                    AppAssets.kHomeIcon,
+                    width: 35,
+                    height: 35,
+                  ),
+                  label: 'Home',
+              ),
+              BottomNavigationBarItem(
+                icon: Image.asset(AppAssets.kShoppingIcon),
+                label: 'Shopping',
+              ),
+              BottomNavigationBarItem(
+                  icon: Image.asset(AppAssets.kCircleIcon),
+                  label: 'Settings'),
+            ],
+            currentIndex: _selectedIndex,
+            selectedItemColor: AppColors.kPrimary,
+            onTap: _onItemTapped,
+          ),
         ),
       ),
     );
