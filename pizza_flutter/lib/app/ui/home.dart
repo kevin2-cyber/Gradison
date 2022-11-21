@@ -11,10 +11,10 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   int _selectedIndex = 0;
-  // Form key = GlobalKey(debugLabel: "key") as Form;
 
   final _widgetOptions = [
     const HomeFragment(),
+
     const SafeArea(
       child: Center(
         child: Text(
@@ -26,6 +26,7 @@ class _HomeState extends State<Home> {
         ),
       ),
     ),
+
     const SafeArea(
       child: Center(
         child: Text(
@@ -38,6 +39,7 @@ class _HomeState extends State<Home> {
       ),
     ),
   ];
+
   void _onItemTapped(int index) {
     setState(() {
       _selectedIndex = index;
