@@ -1,6 +1,6 @@
 package android.ui.pizza.view.home.model;
 
-public class RatingModel {
+public class Rating {
 
     private String rating;
     private int burgerImage;
