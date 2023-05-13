@@ -1,6 +1,6 @@
 package android.ui.pizza.view.home.model;
 
-public class CategoryModel {
+public class Category {
 
     private int emoji;
     private String categoryName;
